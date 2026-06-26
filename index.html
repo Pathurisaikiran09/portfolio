@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pathuri Sai Kiran - Web Developer Portfolio. Showcasing responsive web development, React applications, and coding skills.">
-    <meta name="keywords" content="Pathuri Sai Kiran, Portfolio, Web Developer, React Developer, Frontend Developer, HTML, CSS, JavaScript">
+    <meta name="description" content="Pathuri Sai Kiran - Cyberpunk Developer Portfolio. Showcasing responsive web development, React applications, and coding skills.">
+    <meta name="keywords" content="Pathuri Sai Kiran, Portfolio, Cyberpunk Portfolio, Web Developer, React Developer, HTML, CSS, JavaScript">
     <meta name="author" content="Pathuri Sai Kiran">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pathuri Sai Kiran | Web Developer">
-    <meta property="og:description" content="Explore responsive web designs, React applications, and front-end solutions.">
+    <meta property="og:description" content="Explore responsive web designs, React applications, and futuristic front-end solutions.">
     <meta property="og:image" content="images/project1.png">
 
     <!-- Google Fonts -->
@@ -37,10 +37,12 @@
                 <span class="logo-dot"></span>PSK.
             </a>
             
-            <nav id="nav-menu" class="nav-links">
+            <nav id="nav-menu" class="nav-links" role="navigation" aria-label="Main navigation">
                 <a href="#home" class="nav-link active">Home</a>
-                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
             
@@ -54,7 +56,7 @@
                 </button>
                 
                 <!-- Mobile Navigation Menu Toggle -->
-                <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" class="btn-icon mobile-only">
+                <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" class="btn-icon mobile-only" aria-expanded="false" aria-controls="nav-menu">
                     <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                     <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
@@ -67,291 +69,234 @@
         <section id="home" class="hero-section">
             <div class="container hero-container">
                 <div class="hero-content scroll-reveal">
-                    <span class="hero-badge">Open for Freelance & Career Opportunities</span>
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="text-gradient">Sai Kiran</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        I am a passionate learner and <span class="typing-container"><span id="typing-text" class="text-gradient"></span><span class="typing-cursor"></span></span>
-                    </p>
+                    <div class="hero-eyebrow">Hello, I'm</div>
+                    <h1 class="hero-title">Pathuri Sai Kiran</h1>
+                    <p class="hero-role">Frontend Developer</p>
+                    <p class="hero-tagline">I build modern, responsive, and user-focused web applications using React, JavaScript, and the latest frontend technologies.</p>
+
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        <a href="#" class="btn btn-secondary"><i class="fa-solid fa-download" aria-hidden="true"></i>Download Resume</a>
                     </div>
-                </div>
-                
-                <!-- Interactive Profile Graphic / Visual Element -->
-                <div class="hero-visual scroll-reveal delay-200">
-                    <div class="interactive-card-wrapper">
-                        <div class="glass-card main-hero-card">
-                            <div class="card-header">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                                <span class="card-tab">sai_kiran.js</span>
-                            </div>
-                            <div class="card-body-code">
-<pre><code><span class="code-keyword">const</span> devKiran = {
-  name: <span class="code-string">"Pathuri Sai Kiran"</span>,
-  role: <span class="code-string">"Web Developer"</span>,
-  skills: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"React"</span>],
-  goal: <span class="code-string">"Full-Stack Master"</span>,
-  passion: <span class="code-string">"Building user-friendly websites"</span>
-};
 
-<span class="code-keyword">function</span> <span class="code-func">createImpact</span>(developer) {
-  <span class="code-keyword">return</span> <span class="code-string">"Solving real-world problems"</span>;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="floating-badge badge-1">
-                            <span class="badge-icon">⚛️</span>
-                            <div>
-                                <span class="badge-title">Frontend Mastery</span>
-                                <span class="badge-text">React & JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="floating-badge badge-2">
-                            <span class="badge-icon">🎨</span>
-                            <div>
-                                <span class="badge-title">Web Design</span>
-                                <span class="badge-text">Modern HTML5 & CSS3</span>
-                            </div>
-                        </div>
+                    <div class="skill-chips">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Git</span>
+                        <span>Responsive Design</span>
                     </div>
                 </div>
-            </div>
-            <div class="scroll-indicator">
-                <a href="#projects" class="mouse-scroll" aria-label="Scroll to Projects">
-                    <span class="wheel"></span>
-                </a>
+
+                <div class="hero-visual scroll-reveal delay-200" aria-hidden="true">
+                    <div class="visual-panel">
+                        <div class="visual-glow"></div>
+                        <div class="visual-sphere"></div>
+                        <div class="visual-ring ring-1"></div>
+                        <div class="visual-ring ring-2"></div>
+                        <div class="visual-ring ring-3"></div>
+                        <div class="visual-spot spot-1"></div>
+                        <div class="visual-spot spot-2"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Projects / Work Section -->
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header scroll-reveal align-left">
+                    <span class="section-subtitle">About Me</span>
+                    <h2 class="section-title">Pathuri Sai Kiran</h2>
+                    <p class="section-desc">A motivated frontend developer creating polished and accessible web experiences with clean design, responsive layouts, and reliable code.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-copy scroll-reveal">
+                        <p>As a frontend developer, I focus on building modern, responsive, and user-focused web applications. I bring clarity to complex ideas through clean interfaces, thoughtful interactions, and reliable front-end architecture.</p>
+                        <p>Currently pursuing Computer Science Engineering (CSE), I am sharpening my skills in React, JavaScript, and responsive design to deliver digital products that feel premium and intuitive.</p>
+                    </div>
+
+                    <div class="about-stats-grid scroll-reveal delay-100">
+                        <div class="glass-card about-card">
+                            <span class="stat-label">Role</span>
+                            <span class="stat-value">Frontend Developer</span>
+                        </div>
+                        <div class="glass-card about-card">
+                            <span class="stat-label">Program</span>
+                            <span class="stat-value">Computer Science Engineering (CSE)</span>
+                        </div>
+                        <div class="glass-card about-card">
+                            <span class="stat-label">Graduation</span>
+                            <span class="stat-value">2028</span>
+                        </div>
+                        <div class="glass-card about-card">
+                            <span class="stat-label">Strength</span>
+                            <span class="stat-value">Fast Learner</span>
+                        </div>
+                        <div class="glass-card about-card">
+                            <span class="stat-label">Focus</span>
+                            <span class="stat-value">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Capabilities</span>
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-desc">A curated collection of frontend technologies, tools, and approaches I use to build polished digital products.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card glass-card scroll-reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-brands fa-html5"></i></span>
+                            <div>
+                                <h3>HTML5</h3>
+                                <p>Semantic markup for accessible, responsive layouts.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-card glass-card scroll-reveal delay-100">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i></span>
+                            <div>
+                                <h3>CSS3</h3>
+                                <p>Modern styling with smooth transitions and polished layout systems.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-card glass-card scroll-reveal delay-200">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-brands fa-js"></i></span>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Interactive UI behavior, performance-minded logic, and intuitive application flows.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-card glass-card scroll-reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-brands fa-react"></i></span>
+                            <div>
+                                <h3>React</h3>
+                                <p>Component-driven UI with maintainable state and reusable design patterns.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-card glass-card scroll-reveal delay-100">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-brands fa-git-alt"></i></span>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Version control workflow for team collaboration and reliable delivery.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-card glass-card scroll-reveal delay-200">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                            <div>
+                                <h3>Responsive Design</h3>
+                                <p>Device-first interfaces that adapt seamlessly across screens.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
                 <div class="section-header scroll-reveal">
-                    <span class="section-subtitle">My Portfolio</span>
-                    <h2 class="section-title">My Projects</h2>
-                    <p class="section-desc">A selection of projects that demonstrate my front-end web development skills and hands-on coding practice.</p>
+                    <span class="section-subtitle">Work</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-desc">Thoughtful website projects that highlight frontend craftsmanship, clean interactions, and polished layouts.</p>
                 </div>
 
-                <!-- Project Filters -->
-                <div class="filter-container scroll-reveal delay-100">
-                    <button class="filter-btn active" data-filter="all">All Work</button>
-                    <button class="filter-btn" data-filter="frontend">Frontend</button>
-                    <button class="filter-btn" data-filter="clones">Clones</button>
-                    <button class="filter-btn" data-filter="apps">Web Apps</button>
-                </div>
-
-                <!-- Projects Grid -->
-                <div class="projects-grid" id="projects-grid">
-                    <!-- Project 1 (Varnam Clone) -->
-                    <div class="project-card scroll-reveal" data-category="clones">
-                        <div class="project-img-wrapper">
-                            <img src="images/project2.png" alt="Varnam Clone Web Application Project" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-actions">
-                                    <a href="#" class="project-action-link" aria-label="View Live Project">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                    <a href="https://github.com/Pathurisaikiran09" target="_blank" class="project-action-link" aria-label="View GitHub Repository">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-tag">Clones</span>
-                            <h3 class="project-title">Varnam Clone</h3>
-                            <p class="project-description">An interactive web application cloned from the Malayalam transliteration project, showcasing responsive typing schemes, smart text conversions, and smooth web layouts.</p>
+                <div class="projects-grid">
+                    <article class="project-card glass-card scroll-reveal">
+                        <img src="images/project2.png" alt="Varnam clone" class="project-img" loading="lazy">
+                        <div class="project-content">
+                            <span class="project-tag">Varnam Clone</span>
+                            <h3>Varnam Clone</h3>
+                            <p>A responsive Malayalam transliteration clone with a clean interface and smooth interactions.</p>
                             <div class="project-tech-list">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">React</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="project-btn">Live Demo</a>
+                                <a href="https://github.com/Pathurisaikiran09" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">GitHub</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 2 (Personal Portfolio) -->
-                    <div class="project-card scroll-reveal delay-100" data-category="frontend">
-                        <div class="project-img-wrapper">
-                            <img src="images/project1.png" alt="Personal Portfolio Website Project" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-actions">
-                                    <a href="#" class="project-action-link" aria-label="View Live Project">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                    <a href="https://github.com/Pathurisaikiran09" target="_blank" class="project-action-link" aria-label="View GitHub Repository">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-tag">Frontend</span>
-                            <h3 class="project-title">Personal Developer Portfolio</h3>
-                            <p class="project-description">A professional single-page web development showcase built completely from scratch. Implements custom theme variables, particle animations, dynamic portfolio filtering, and contact page validations.</p>
+                    <article class="project-card glass-card scroll-reveal delay-100">
+                        <img src="images/project1.png" alt="Portfolio project" class="project-img" loading="lazy">
+                        <div class="project-content">
+                            <span class="project-tag">Portfolio</span>
+                            <h3>Portfolio Website</h3>
+                            <p>A premium developer profile built with modern UI patterns, smooth interactions, and responsive polish.</p>
                             <div class="project-tech-list">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Canvas API</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="project-btn">Live Demo</a>
+                                <a href="https://github.com/Pathurisaikiran09" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">GitHub</a>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Project 3 (Task Manager Web App) -->
-                    <div class="project-card scroll-reveal delay-200" data-category="apps">
-                        <div class="project-img-wrapper">
-                            <img src="images/project3.png" alt="Task Manager Application Project" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-actions">
-                                    <a href="#" class="project-action-link" aria-label="View Live Project">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                    <a href="https://github.com/Pathurisaikiran09" target="_blank" class="project-action-link" aria-label="View GitHub Repository">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <span class="project-tag">Web Apps</span>
-                            <h3 class="project-title">Dynamic Task Management Web App</h3>
-                            <p class="project-description">A responsive task planner app created to structure and organize schedules. Employs clean state tracking, categories filters, and visually pleasing Kanban boards.</p>
-                            <div class="project-tech-list">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">CSS Grid</span>
-                                <span class="tech-tag">Local Storage</span>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- About & Skills Section -->
-        <section id="about" class="about-section">
+        <!-- Education Section -->
+        <section id="education" class="education-section">
             <div class="container">
-                <div class="about-grid">
-                    <!-- About Text Content -->
-                    <div class="about-info-block scroll-reveal">
-                        <div class="section-header align-left">
-                            <span class="section-subtitle">Biography</span>
-                            <h2 class="section-title">About Me</h2>
-                        </div>
-                        <p class="about-paragraph">
-                            I am a passionate learner and aspiring web developer with a strong interest in building modern, user-friendly websites and applications. I enjoy working with technologies like HTML, CSS, JavaScript, and React, and I’m continuously improving my skills through hands-on projects.
-                        </p>
-                        <p class="about-paragraph">
-                            My approach centers on translating visual concepts into semantic, high-performance code and utilizing web standards to establish responsive design structures that function perfectly across all devices.
-                        </p>
-                        
-                        <!-- Experience / Education Timeline -->
-                        <div class="timeline-container">
-                            <h3 class="timeline-heading">Future Goals</h3>
-                            <div class="timeline">
-                                <div class="timeline-item scroll-reveal delay-100">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-date">Goal Direction</div>
-                                    <h4 class="timeline-title">Become a Professional Full-Stack Developer</h4>
-                                    <span class="timeline-company">Career Mission</span>
-                                    <p class="timeline-text">Contribute to real-world projects, build scalable backend web architectures, and engineer high-performance web products.</p>
-                                </div>
-                                <div class="timeline-item scroll-reveal delay-200">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-date">Ongoing</div>
-                                    <h4 class="timeline-title">Continuous Upskilling</h4>
-                                    <span class="timeline-company">Learning Journey</span>
-                                    <p class="timeline-text">Building modern web designs using HTML5, CSS3, JavaScript (ES6+), React components, and local databases.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Education</span>
+                    <h2 class="section-title">Academic Timeline</h2>
+                    <p class="section-desc">A focused academic path with a strong foundation in engineering principles and frontend development.</p>
+                </div>
 
-                    <!-- Skills & Progress Block -->
-                    <div class="about-skills-block scroll-reveal delay-100">
-                        <div class="glass-card skills-card">
-                            <h3 class="skills-card-title">Technical Skills</h3>
-                            
-                            <div class="skills-category-group">
-                                <h4 class="skills-cat-title">Core Frontend Skills</h4>
-                                <div class="skill-item">
-                                    <div class="skill-label">
-                                        <span class="skill-label-text">
-                                            <i class="fa-brands fa-html5"></i> HTML5 & Semantic Markup
-                                        </span>
-                                        <span>95%</span>
-                                    </div>
-                                    <div class="skill-bar-bg">
-                                        <div class="skill-bar-fill" style="width: 95%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-label">
-                                        <span class="skill-label-text">
-                                            <i class="fa-brands fa-css3-alt"></i> CSS3, Flexbox & CSS Grid
-                                        </span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="skill-bar-bg">
-                                        <div class="skill-bar-fill" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-label">
-                                        <span class="skill-label-text">
-                                            <i class="fa-brands fa-js"></i> JavaScript (ES6+) & DOM Handling
-                                        </span>
-                                        <span>85%</span>
-                                    </div>
-                                    <div class="skill-bar-bg">
-                                        <div class="skill-bar-fill" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-label">
-                                        <span class="skill-label-text">
-                                            <i class="fa-brands fa-react"></i> React JS Framework
-                                        </span>
-                                        <span>80%</span>
-                                    </div>
-                                    <div class="skill-bar-bg">
-                                        <div class="skill-bar-fill" style="width: 80%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills-category-group">
-                                <h4 class="skills-cat-title">Interests & Methodologies</h4>
-                                <div class="skill-item">
-                                    <div class="skill-label">
-                                        <span class="skill-label-text">
-                                            <i class="fa-solid fa-mobile-screen-button"></i> Responsive Design
-                                        </span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="skill-bar-bg">
-                                        <div class="skill-bar-fill" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-label">
-                                        <span class="skill-label-text">
-                                            <i class="fa-brands fa-git-alt"></i> Version Control (Git/GitHub)
-                                        </span>
-                                        <span>82%</span>
-                                    </div>
-                                    <div class="skill-bar-bg">
-                                        <div class="skill-bar-fill" style="width: 82%"></div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="timeline-container">
+                    <article class="timeline-item glass-card scroll-reveal">
+                        <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-details">
+                            <span class="timeline-date">2024 - 2028</span>
+                            <h3>Computer Science Engineering (CSE)</h3>
+                            <span class="timeline-company">NRI Institute Of Technology</span>
+                            <p class="timeline-text">Building a strong foundation in software development, algorithms, and modern web technologies.</p>
                         </div>
-                    </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Goals Section -->
+        <section id="experience" class="goals-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Career Targets</span>
+                    <h2 class="section-title">Professional Objective</h2>
+                </div>
+
+                <div class="glass-card goals-card scroll-reveal">
+                    <div class="goals-icon"><i class="fa-solid fa-compass"></i></div>
+                    <p class="goals-text">
+                        Seeking opportunities as a Full Stack Developer where I can contribute, learn, and grow by building impactful software solutions.
+                    </p>
                 </div>
             </div>
         </section>
@@ -359,86 +304,65 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <div class="contact-container">
-                    <!-- Form Container -->
-                    <div class="contact-form-block scroll-reveal">
-                        <div class="section-header align-left">
-                            <span class="section-subtitle">Reach Out</span>
-                            <h2 class="section-title">Send a Message</h2>
-                            <p class="section-desc">Have an entry-level opening, project idea, or just want to say hello? Drop me a message.</p>
-                        </div>
+                <div class="section-header scroll-reveal align-left">
+                    <span class="section-subtitle">Contact</span>
+                    <h2 class="section-title">Let's build together</h2>
+                    <p class="section-desc">Reach out to discuss opportunities, collaborations, or your next digital product idea.</p>
+                </div>
 
+                <div class="contact-grid">
+                    <div class="glass-card contact-form-block scroll-reveal">
                         <form id="contact-form" novalidate>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="contact-name">Your Name</label>
-                                    <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                                    <label for="contact-name">Name</label>
+                                    <input type="text" id="contact-name" name="name" placeholder="Your name" required>
                                     <span class="error-msg" id="name-error">Please enter your name</span>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-email">Email Address</label>
-                                    <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                                    <label for="contact-email">Email</label>
+                                    <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
                                     <span class="error-msg" id="email-error">Please enter a valid email address</span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="contact-message">Your Message</label>
-                                <textarea id="contact-message" name="message" rows="5" placeholder="Let's build something amazing..." required></textarea>
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
                                 <span class="error-msg" id="message-error">Please write a message</span>
                             </div>
-                            
-                            <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
-                                <span class="btn-text">Send Message</span>
-                                <span class="btn-spinner hidden"></span>
-                            </button>
+                            <div class="contact-actions-row">
+                                <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-spinner hidden"></span>
+                                </button>
+                                <a href="mailto:p.saikiran198@gmail.com" class="btn btn-secondary">Hire Me</a>
+                            </div>
                         </form>
-                        
                         <div id="form-feedback" class="form-feedback hidden"></div>
                     </div>
 
-                    <!-- Direct Info / Details -->
-                    <div class="contact-info-block scroll-reveal delay-200">
-                        <div class="glass-card contact-details-card">
-                            <h3>Contact Info</h3>
-                            
-                            <div class="contact-details-list">
-                                <div class="contact-detail-item">
-                                    <div class="contact-detail-icon">
-                                        <i class="fa-regular fa-envelope"></i>
-                                    </div>
-                                    <div class="contact-detail-content">
-                                        <span class="detail-label">Email Me</span>
-                                        <a href="mailto:p.saikiran198@gmail.com" class="detail-link">p.saikiran198@gmail.com</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="contact-detail-item">
-                                    <div class="contact-detail-icon">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                    </div>
-                                    <div class="contact-detail-content">
-                                        <span class="detail-label">Location</span>
-                                        <span class="detail-text">India (Open to Remote)</span>
-                                    </div>
-                                </div>
+                    <aside class="glass-card contact-info-panel scroll-reveal delay-100">
+                        <h3>Contact Info</h3>
+                        <div class="contact-info-list">
+                            <div class="contact-info-row">
+                                <span>Email</span>
+                                <a href="mailto:p.saikiran198@gmail.com">p.saikiran198@gmail.com</a>
                             </div>
-                            
-                            <div class="social-links-container">
-                                <h4>Follow Me</h4>
-                                <div class="social-links">
-                                    <a href="https://github.com/Pathurisaikiran09" target="_blank" class="social-link" aria-label="GitHub">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/saikiran-pathuri-b8757b3b5/" target="_blank" class="social-link" aria-label="LinkedIn">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="https://instagram.com/Sai_chowdary_pathuri" target="_blank" class="social-link" aria-label="Instagram">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                </div>
+                            <div class="contact-info-row">
+                                <span>LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/saikiran-pathuri-b8757b3b5/" target="_blank" rel="noopener noreferrer">linkedin.com/in/saikiran-pathuri-b8757b3b5/</a>
+                            </div>
+                            <div class="contact-info-row">
+                                <span>GitHub</span>
+                                <a href="https://github.com/Pathurisaikiran09" target="_blank" rel="noopener noreferrer">github.com/Pathurisaikiran09</a>
                             </div>
                         </div>
-                    </div>
+                        <div class="contact-pill-group">
+                            <a href="https://www.linkedin.com/in/saikiran-pathuri-b8757b3b5/" target="_blank" rel="noopener noreferrer" class="contact-pill">LinkedIn</a>
+                            <a href="https://github.com/Pathurisaikiran09" target="_blank" rel="noopener noreferrer" class="contact-pill">GitHub</a>
+                            <a href="mailto:p.saikiran198@gmail.com" class="contact-pill">Email</a>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
@@ -449,12 +373,12 @@
         <div class="container footer-container">
             <div class="footer-left">
                 <a href="#" class="footer-logo">PSK<span style="color:var(--color-primary);">.</span></a>
-                <p class="footer-copy">&copy; 2026 Pathuri Sai Kiran. All Rights Reserved.</p>
+                <p class="footer-copy">&copy; 2026 Pathuri Sai Kiran. Built with passion and code.</p>
             </div>
             <div class="footer-right">
-                <a href="https://github.com/Pathurisaikiran09" target="_blank" style="margin-right: 12px;" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/saikiran-pathuri-b8757b3b5/" target="_blank" style="margin-right: 12px;" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://instagram.com/Sai_chowdary_pathuri" target="_blank" style="margin-right: 24px;" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Pathurisaikiran09" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saikiran-pathuri-b8757b3b5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/Sai_chowdary_pathuri" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#home" class="footer-link">Back to Top</a>
             </div>
         </div>

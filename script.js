@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     initCanvasBackground();
     initSkillAnimations();
+    initScrollReveal();
+    initTypewriterEffect();
 });
 
 /* ==========================================================================
@@ -56,8 +58,9 @@ function initMobileMenu() {
     const navLinks = document.querySelectorAll('.nav-link');
 
     mobileMenuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('mobile-open');
+        const isOpen = navMenu.classList.toggle('mobile-open');
         mobileMenuToggle.classList.toggle('mobile-open-btn');
+        mobileMenuToggle.setAttribute('aria-expanded', isOpen);
     });
 
     // Close menu when clicking on nav link items
@@ -65,6 +68,7 @@ function initMobileMenu() {
         link.addEventListener('click', () => {
             navMenu.classList.remove('mobile-open');
             mobileMenuToggle.classList.remove('mobile-open-btn');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
         });
     });
 }
@@ -285,6 +289,85 @@ function initSkillAnimations() {
     if (skillsSection) {
         observer.observe(skillsSection);
     }
+}
+
+/* ==========================================================================
+   SCROLL REVEAL (FADE-IN TRIGGERS)
+   ========================================================================== */
+function initScrollReveal() {
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+
+    const options = {
+        root: null,
+        rootMargin: '0px 0px -10% 0px', // Trigger when element is 10% inside viewport
+        threshold: 0.05
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Reveal once
+            }
+        });
+    }, options);
+
+    revealElements.forEach(el => {
+        observer.observe(el);
+    });
+}
+
+/* ==========================================================================
+   TYPEWRITER TYPING EFFECT (HERO)
+   ========================================================================== */
+function initTypewriterEffect() {
+    const typingSpan = document.getElementById('typing-text');
+    if (!typingSpan) return;
+
+    const phrases = [
+        'Frontend Developer',
+        'UI Designer',
+        'Problem Solver',
+        'AI Enthusiast'
+    ];
+
+    let phraseIdx = 0;
+    let charIdx = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+
+    function type() {
+        const currentPhrase = phrases[phraseIdx];
+        
+        if (isDeleting) {
+            // Remove letters
+            typingSpan.textContent = currentPhrase.substring(0, charIdx - 1);
+            charIdx--;
+            typingSpeed = 50; // Delete faster
+        } else {
+            // Add letters
+            typingSpan.textContent = currentPhrase.substring(0, charIdx + 1);
+            charIdx++;
+            typingSpeed = 120; // Normal typing speed
+        }
+
+        // Handle states transition
+        if (!isDeleting && charIdx === currentPhrase.length) {
+            // Finished typing the phrase, pause before deleting
+            isDeleting = true;
+            typingSpeed = 2000; // Pause duration
+        } else if (isDeleting && charIdx === 0) {
+            // Finished deleting, move to next phrase
+            isDeleting = false;
+            phraseIdx = (phraseIdx + 1) % phrases.length;
+            typingSpeed = 500; // Small delay before typing next
+        }
+
+        setTimeout(type, typingSpeed);
+    }
+
+    // Begin loop
+    setTimeout(type, 1000);
 }
 
 /* ==========================================================================
