@@ -498,7 +498,7 @@ section {
 
 .hero-role {
     font-size: clamp(1.35rem, 2.5vw, 1.9rem);
-    color: #ffffff;
+    color: var(--color-text);
     font-weight: 600;
 }
 
@@ -529,14 +529,14 @@ section {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.16);
+    background: var(--color-glass-bg);
+    color: var(--color-text);
+    border-color: var(--color-glass-border);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
+    background: rgba(var(--color-bg-rgb), 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .skill-chips {
@@ -551,9 +551,9 @@ section {
     align-items: center;
     padding: 0.85rem 1rem;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
+    border: 1px solid var(--color-glass-border);
+    background: var(--color-glass-bg);
+    color: var(--color-text);
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -565,9 +565,9 @@ section {
     min-height: 420px;
     width: 100%;
     border-radius: 32px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.25);
+    background: var(--color-glass-bg);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.12);
     position: relative;
     overflow: hidden;
 }
@@ -605,7 +605,7 @@ section {
 .visual-ring {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--color-glass-border);
     mix-blend-mode: screen;
 }
 
@@ -641,8 +641,8 @@ section {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 0 24px rgba(255, 255, 255, 0.45);
+    background: rgba(var(--color-bg-rgb), 0.15);
+    box-shadow: 0 0 24px rgba(var(--color-bg-rgb), 0.3);
 }
 
 .spot-1 { top: 18%; left: 14%; }
@@ -680,9 +680,9 @@ section {
    ========================================================================== */
 
 .about-section {
-    background: rgba(255, 255, 255, 0.02);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(var(--color-bg-rgb), 0.08);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .about-grid {
@@ -712,9 +712,9 @@ section {
 .about-card {
     padding: 1.75rem;
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    background: var(--color-glass-bg);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -727,7 +727,7 @@ section {
 
 .about-card .stat-label,
 .about-card .stat-value {
-    color: #ffffff;
+    color: var(--color-text);
 }
 
 .about-card .stat-label {
@@ -755,9 +755,9 @@ section {
 .skill-card {
     padding: 1.8rem;
     border-radius: 28px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+    background: var(--color-glass-bg);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
     transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -812,9 +812,9 @@ section {
     flex-direction: column;
     border-radius: 32px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.16);
+    background: var(--color-glass-bg);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
     transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -871,8 +871,8 @@ section {
 
 .project-tech-list span {
     font-size: 0.78rem;
-    color: #94a3b8;
-    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-muted);
+    background: rgba(var(--color-bg-rgb), 0.08);
     padding: 0.55rem 0.85rem;
     border-radius: 999px;
 }
@@ -892,23 +892,23 @@ section {
     padding: 0 22px;
     border-radius: 999px;
     border: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.07);
-    color: #ffffff;
+    background: rgba(var(--color-bg-rgb), 0.08);
+    color: var(--color-text);
     font-weight: 600;
     transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 .project-btn:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(var(--color-bg-rgb), 0.12);
 }
 
 .project-btn-secondary {
-    border-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(var(--color-bg-rgb), 0.12);
 }
 
 .project-btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(var(--color-bg-rgb), 0.15);
 }
 
 /* ==========================================================================
@@ -916,7 +916,7 @@ section {
    ========================================================================== */
 
 .education-section {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .timeline-container {
@@ -929,9 +929,9 @@ section {
 .timeline-item {
     padding: 2rem;
     border-radius: 28px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.14);
+    background: var(--color-glass-bg);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
     display: grid;
     grid-template-columns: 52px minmax(0, 1fr);
     gap: 1.2rem;
@@ -1102,9 +1102,9 @@ section {
 .btn-spinner {
     width: 20px;
     height: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(var(--color-bg-rgb), 0.3);
     border-radius: 50%;
-    border-top-color: white;
+    border-top-color: var(--color-text);
     animation: spin 1s ease-in-out infinite;
 }
 
@@ -1148,9 +1148,9 @@ section {
 .contact-form-block,
 .contact-info-panel {
     border-radius: 32px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.15);
+    background: var(--color-glass-bg);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.12);
     padding: 2rem;
 }
 
@@ -1185,7 +1185,7 @@ section {
 }
 
 .contact-info-row a {
-    color: #ffffff;
+    color: var(--color-text);
     font-weight: 600;
     word-break: break-word;
 }
@@ -1203,14 +1203,14 @@ section {
     min-height: 44px;
     padding: 0 1.2rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.06);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(var(--color-bg-rgb), 0.08);
+    color: var(--color-text);
+    border: 1px solid rgba(var(--color-bg-rgb), 0.12);
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .contact-pill:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(var(--color-bg-rgb), 0.12);
     transform: translateY(-2px);
 }
 
@@ -1345,7 +1345,7 @@ section {
         gap: 32px;
         transition: left var(--transition-normal);
         z-index: 99;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-top: 1px solid var(--color-border);
     }
     
     .nav-links.mobile-open {
