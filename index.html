@@ -11,15 +11,18 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pathuri Sai Kiran | Web Developer">
     <meta property="og:description" content="Explore responsive web designs, React applications, and front-end solutions.">
-    <meta property="og:image" content="assets/project1.png">
+    <meta property="og:image" content="images/project1.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     
     <title>Pathuri Sai Kiran | Web Developer</title>
 </head>
@@ -63,22 +66,22 @@
         <!-- Hero Section -->
         <section id="home" class="hero-section">
             <div class="container hero-container">
-                <div class="hero-content">
+                <div class="hero-content scroll-reveal">
                     <span class="hero-badge">Open for Freelance & Career Opportunities</span>
                     <h1 class="hero-title">
                         Hi, I'm <span class="text-gradient">Sai Kiran</span>
                     </h1>
                     <p class="hero-subtitle">
-                        I am a passionate learner and aspiring web developer focused on building modern, user-friendly websites and digital applications.
+                        I am a passionate learner and <span class="typing-container"><span id="typing-text" class="text-gradient"></span><span class="typing-cursor"></span></span>
                     </p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
                 </div>
                 
                 <!-- Interactive Profile Graphic / Visual Element -->
-                <div class="hero-visual">
+                <div class="hero-visual scroll-reveal delay-200">
                     <div class="interactive-card-wrapper">
                         <div class="glass-card main-hero-card">
                             <div class="card-header">
@@ -128,14 +131,14 @@
         <!-- Projects / Work Section -->
         <section id="projects" class="projects-section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header scroll-reveal">
                     <span class="section-subtitle">My Portfolio</span>
                     <h2 class="section-title">My Projects</h2>
                     <p class="section-desc">A selection of projects that demonstrate my front-end web development skills and hands-on coding practice.</p>
                 </div>
 
                 <!-- Project Filters -->
-                <div class="filter-container">
+                <div class="filter-container scroll-reveal delay-100">
                     <button class="filter-btn active" data-filter="all">All Work</button>
                     <button class="filter-btn" data-filter="frontend">Frontend</button>
                     <button class="filter-btn" data-filter="clones">Clones</button>
@@ -145,16 +148,16 @@
                 <!-- Projects Grid -->
                 <div class="projects-grid" id="projects-grid">
                     <!-- Project 1 (Varnam Clone) -->
-                    <div class="project-card" data-category="clones">
+                    <div class="project-card scroll-reveal" data-category="clones">
                         <div class="project-img-wrapper">
-                            <img src="assets/project2.png" alt="Varnam Clone Web Application Project" class="project-img">
+                            <img src="images/project2.png" alt="Varnam Clone Web Application Project" class="project-img">
                             <div class="project-overlay">
                                 <div class="project-actions">
                                     <a href="#" class="project-action-link" aria-label="View Live Project">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     </a>
                                     <a href="https://github.com/Pathurisaikiran09" target="_blank" class="project-action-link" aria-label="View GitHub Repository">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        <i class="fa-brands fa-github"></i>
                                     </a>
                                 </div>
                             </div>
@@ -173,16 +176,16 @@
                     </div>
 
                     <!-- Project 2 (Personal Portfolio) -->
-                    <div class="project-card" data-category="frontend">
+                    <div class="project-card scroll-reveal delay-100" data-category="frontend">
                         <div class="project-img-wrapper">
-                            <img src="assets/project1.png" alt="Personal Portfolio Website Project" class="project-img">
+                            <img src="images/project1.png" alt="Personal Portfolio Website Project" class="project-img">
                             <div class="project-overlay">
                                 <div class="project-actions">
                                     <a href="#" class="project-action-link" aria-label="View Live Project">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     </a>
                                     <a href="https://github.com/Pathurisaikiran09" target="_blank" class="project-action-link" aria-label="View GitHub Repository">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        <i class="fa-brands fa-github"></i>
                                     </a>
                                 </div>
                             </div>
@@ -201,16 +204,16 @@
                     </div>
 
                     <!-- Project 3 (Task Manager Web App) -->
-                    <div class="project-card" data-category="apps">
+                    <div class="project-card scroll-reveal delay-200" data-category="apps">
                         <div class="project-img-wrapper">
-                            <img src="assets/project3.png" alt="Task Manager Application Project" class="project-img">
+                            <img src="images/project3.png" alt="Task Manager Application Project" class="project-img">
                             <div class="project-overlay">
                                 <div class="project-actions">
                                     <a href="#" class="project-action-link" aria-label="View Live Project">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     </a>
                                     <a href="https://github.com/Pathurisaikiran09" target="_blank" class="project-action-link" aria-label="View GitHub Repository">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        <i class="fa-brands fa-github"></i>
                                     </a>
                                 </div>
                             </div>
@@ -235,7 +238,7 @@
             <div class="container">
                 <div class="about-grid">
                     <!-- About Text Content -->
-                    <div class="about-info-block">
+                    <div class="about-info-block scroll-reveal">
                         <div class="section-header align-left">
                             <span class="section-subtitle">Biography</span>
                             <h2 class="section-title">About Me</h2>
@@ -251,14 +254,14 @@
                         <div class="timeline-container">
                             <h3 class="timeline-heading">Future Goals</h3>
                             <div class="timeline">
-                                <div class="timeline-item">
+                                <div class="timeline-item scroll-reveal delay-100">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-date">Goal Direction</div>
                                     <h4 class="timeline-title">Become a Professional Full-Stack Developer</h4>
                                     <span class="timeline-company">Career Mission</span>
                                     <p class="timeline-text">Contribute to real-world projects, build scalable backend web architectures, and engineer high-performance web products.</p>
                                 </div>
-                                <div class="timeline-item">
+                                <div class="timeline-item scroll-reveal delay-200">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-date">Ongoing</div>
                                     <h4 class="timeline-title">Continuous Upskilling</h4>
@@ -270,7 +273,7 @@
                     </div>
 
                     <!-- Skills & Progress Block -->
-                    <div class="about-skills-block">
+                    <div class="about-skills-block scroll-reveal delay-100">
                         <div class="glass-card skills-card">
                             <h3 class="skills-card-title">Technical Skills</h3>
                             
@@ -278,7 +281,9 @@
                                 <h4 class="skills-cat-title">Core Frontend Skills</h4>
                                 <div class="skill-item">
                                     <div class="skill-label">
-                                        <span>HTML5 & Semantic Markup</span>
+                                        <span class="skill-label-text">
+                                            <i class="fa-brands fa-html5"></i> HTML5 & Semantic Markup
+                                        </span>
                                         <span>95%</span>
                                     </div>
                                     <div class="skill-bar-bg">
@@ -287,7 +292,9 @@
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-label">
-                                        <span>CSS3, Flexbox & CSS Grid</span>
+                                        <span class="skill-label-text">
+                                            <i class="fa-brands fa-css3-alt"></i> CSS3, Flexbox & CSS Grid
+                                        </span>
                                         <span>90%</span>
                                     </div>
                                     <div class="skill-bar-bg">
@@ -296,7 +303,9 @@
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-label">
-                                        <span>JavaScript (ES6+) & DOM Handling</span>
+                                        <span class="skill-label-text">
+                                            <i class="fa-brands fa-js"></i> JavaScript (ES6+) & DOM Handling
+                                        </span>
                                         <span>85%</span>
                                     </div>
                                     <div class="skill-bar-bg">
@@ -305,7 +314,9 @@
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-label">
-                                        <span>React JS Framework</span>
+                                        <span class="skill-label-text">
+                                            <i class="fa-brands fa-react"></i> React JS Framework
+                                        </span>
                                         <span>80%</span>
                                     </div>
                                     <div class="skill-bar-bg">
@@ -318,7 +329,9 @@
                                 <h4 class="skills-cat-title">Interests & Methodologies</h4>
                                 <div class="skill-item">
                                     <div class="skill-label">
-                                        <span>Responsive Design & Media Queries</span>
+                                        <span class="skill-label-text">
+                                            <i class="fa-solid fa-mobile-screen-button"></i> Responsive Design
+                                        </span>
                                         <span>90%</span>
                                     </div>
                                     <div class="skill-bar-bg">
@@ -327,7 +340,9 @@
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-label">
-                                        <span>Version Control (Git & GitHub)</span>
+                                        <span class="skill-label-text">
+                                            <i class="fa-brands fa-git-alt"></i> Version Control (Git/GitHub)
+                                        </span>
                                         <span>82%</span>
                                     </div>
                                     <div class="skill-bar-bg">
@@ -346,7 +361,7 @@
             <div class="container">
                 <div class="contact-container">
                     <!-- Form Container -->
-                    <div class="contact-form-block">
+                    <div class="contact-form-block scroll-reveal">
                         <div class="section-header align-left">
                             <span class="section-subtitle">Reach Out</span>
                             <h2 class="section-title">Send a Message</h2>
@@ -382,14 +397,14 @@
                     </div>
 
                     <!-- Direct Info / Details -->
-                    <div class="contact-info-block">
+                    <div class="contact-info-block scroll-reveal delay-200">
                         <div class="glass-card contact-details-card">
                             <h3>Contact Info</h3>
                             
                             <div class="contact-details-list">
                                 <div class="contact-detail-item">
                                     <div class="contact-detail-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                        <i class="fa-regular fa-envelope"></i>
                                     </div>
                                     <div class="contact-detail-content">
                                         <span class="detail-label">Email Me</span>
@@ -399,7 +414,7 @@
                                 
                                 <div class="contact-detail-item">
                                     <div class="contact-detail-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                        <i class="fa-solid fa-location-dot"></i>
                                     </div>
                                     <div class="contact-detail-content">
                                         <span class="detail-label">Location</span>
@@ -412,13 +427,13 @@
                                 <h4>Follow Me</h4>
                                 <div class="social-links">
                                     <a href="https://github.com/Pathurisaikiran09" target="_blank" class="social-link" aria-label="GitHub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        <i class="fa-brands fa-github"></i>
                                     </a>
                                     <a href="https://www.linkedin.com/in/saikiran-pathuri-b8757b3b5/" target="_blank" class="social-link" aria-label="LinkedIn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                        <i class="fa-brands fa-linkedin-in"></i>
                                     </a>
                                     <a href="https://instagram.com/Sai_chowdary_pathuri" target="_blank" class="social-link" aria-label="Instagram">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                        <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>
@@ -434,9 +449,12 @@
         <div class="container footer-container">
             <div class="footer-left">
                 <a href="#" class="footer-logo">PSK<span style="color:var(--color-primary);">.</span></a>
-                <p class="footer-copy">&copy; 2026 Pathuri Sai Kiran. Built from scratch with HTML, CSS & JS.</p>
+                <p class="footer-copy">&copy; 2026 Pathuri Sai Kiran. All Rights Reserved.</p>
             </div>
             <div class="footer-right">
+                <a href="https://github.com/Pathurisaikiran09" target="_blank" style="margin-right: 12px;" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saikiran-pathuri-b8757b3b5/" target="_blank" style="margin-right: 12px;" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/Sai_chowdary_pathuri" target="_blank" style="margin-right: 24px;" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#home" class="footer-link">Back to Top</a>
             </div>
         </div>
